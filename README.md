@@ -52,5 +52,5 @@ To generate the logic cell footprint and analyze the resource utilization of a s
 ```bash
 yosys -p 'read_verilog *.v; synth -top transformer_block; stat
 ```
-
+Project report is provided [Here](tinyllm_project.pdf)
 
