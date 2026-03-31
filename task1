@@ -1,0 +1,31 @@
+#! /home/sajid/oss-cad-suite/bin/vvp
+:ivl_version "14.0 (devel)" "(s20251012-140-g8d7f5d41c)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/home/sajid/oss-cad-suite/lib/ivl/system.vpi";
+:vpi_module "/home/sajid/oss-cad-suite/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/home/sajid/oss-cad-suite/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/home/sajid/oss-cad-suite/lib/ivl/v2005_math.vpi";
+:vpi_module "/home/sajid/oss-cad-suite/lib/ivl/va_math.vpi";
+S_0x55555f7f5d40 .scope module, "tb_verify" "tb_verify" 2 1;
+ .timescale 0 0;
+P_0x55555f7f5ed0 .param/l "DEPTH" 0 2 3, +C4<00000000000000000000000000000101>;
+v0x55555f7f5f70 .array "rom", 4 0, 15 0;
+    .scope S_0x55555f7f5d40;
+T_0 ;
+    %vpi_call 2 10 "$readmemh", "tinystories_q88_roms/lm_head_weight.hex", v0x55555f7f5f70 {0 0 0};
+    %vpi_call 2 12 "$display", "--- ROM Verification ---" {0 0 0};
+    %vpi_call 2 13 "$display", "Index 0: %h", &A<v0x55555f7f5f70, 0> {0 0 0};
+    %vpi_call 2 14 "$display", "Index 1: %h", &A<v0x55555f7f5f70, 1> {0 0 0};
+    %vpi_call 2 15 "$display", "Index 2: %h", &A<v0x55555f7f5f70, 2> {0 0 0};
+    %vpi_call 2 16 "$display", "Index 3: %h", &A<v0x55555f7f5f70, 3> {0 0 0};
+    %vpi_call 2 17 "$display", "Index 4: %h", &A<v0x55555f7f5f70, 4> {0 0 0};
+    %vpi_call 2 18 "$display", "------------------------" {0 0 0};
+    %vpi_call 2 20 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "task1.v";

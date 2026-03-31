@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1774929365" />
+    <testcase name="validate_25_prompts" classname="test_task5" file="/home/sajid/tinyllm/test_task5.py" lineno="25" time="779.1394441127777" sim_time_ns="30564240.0" ratio_time="39228.202641959855" />
+  </testsuite>
+</testsuites>
